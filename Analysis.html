@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Relationships</title>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" style ="background-color: #95C8D8;">
+          <a class="navbar-brand" href="index.html" style ="color:white">Latitude Relationships</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Data.html" style ="color:white">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Analysis.html" style ="color:white">Analysis</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style ="color:white">
+                  Visualizations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"style ="background-color:#95C8D8">
+                  <li><a class="dropdown-item" href="Comparisons.html" style = "color:white">Comparisons</a></li>
+                  <li><a class="dropdown-item" href="Cloudiness.html" style = "color:white">Visualization: Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="Humidity.html" style = "color:white">Visualization: Humidity</a></li>
+                  <li><a class="dropdown-item" href="Temperature.html" style = "color:white">Visualization: Temperature</a></li>
+                  <li><a class="dropdown-item" href="Wind_Speed.html" style = "color:white">Visualization: Wind Speed</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</head>
+<body>
+    <div class="container" style="background-color:#f5f3f3">
+        <div class="row">
+          <div class="col"  style ="font-size:18px">
+            <h1><center>Analysis</center></h1> </br>
+            <h3>Correlation Table, Northern Hemisphere</h3>
+            <center><img src="Visualizations/NH_Correlations.PNG"></center></br>
+            <p>There is a strong correlation between the maximum forecasted temperature and degrees latitude of a given city. This relationship was stronger for the northern hemisphere than the Southern Hemisphere. This correlation makes sense. Cities near the equator experience more solar exposure and more consistent heating through out the year. As latitude increases, cities experience more dynamic changes in solar exposure and heating through out the year. These higher latitude areas receive less solar energy overall.</p>
+            <center><img src="Visualizations/NH_Max Temperature (F)vslat.png"></center></br>
+            <p>There is a moderate negative correlation between maximum forecasted temperature and humidity. This makes sense when you consider inland plains and desert regions. These areas are dry with low humidity, but have high daytime temperatures. This relationship breaks down in coastal areas and other wet regions. These areas become humid with high temperatures due to increases in evaporation from bodies of water, and evapotranspiration of vegetation. </p>
+            <center><img src="Visualizations/HumidityMap.png"></center></br>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
+</body>
+</html>

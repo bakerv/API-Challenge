@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Relationships</title>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" style ="background-color: #95C8D8;">
+          <a class="navbar-brand" href="index.html" style="color:white">Latitude Relationships</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Data.html" style ="color:white">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Analysis.html" style="color:white">Analysis</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                  Visualizations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style ="background-color: #95C8D8;">
+                  <li><a class="dropdown-item" href="Comparisons.html" style="color:white">Comparisons</a></li>
+                  <li><a class="dropdown-item" href="Cloudiness.html" style="color:white">Visualization: Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="Humidity.html" style="color:white">Visualization: Humidity</a></li>
+                  <li><a class="dropdown-item" href="Temperature.html" style="color:white">Visualization: Temperature</a></li>
+                  <li><a class="dropdown-item" href="Wind_Speed.html" style="color:white">Visualization: Wind Speed</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</head>
+<body>
+    <div class="container-fluid" style="background-color:#f5f3f3">
+        <div class="row justify-content-center">
+       
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12">
+              </br>
+              <h3>Latitude vs. Weather - Is there a correlation?</h3>
+              <a style="font-size:18px">
+                <p>Here we explore the relationship between weather and distance from the equator.</p>
+                <p>Data was collected from the OpenWeatherMap API for more than 500 randomly selected cities around the globe. To elimate the effects of day and night cycles, forecast data for the same day was used for all locations.</p>
+                </br>
+              </a>
+              <h4>Tools Used:</h4>
+              <P>Python, Pandas, Matplotlib, NumPy, SciPy, Requests, CitiPy, HTML5, and Bootstrap</P>
+            </br>
+              <a class="btn btn-primary" href="Analysis.html" role="button" style ="background-color: #95C8D8;">See the Analysis</a>
+              <p></p>
+          </div>
+          <div class="col-md-8 col-sm-12">
+              <img class="chart" src="Visualizations/GlobalMax Temperature (F)vslat.png">
+          </div>
+        </div>
+      </div>
+      <div class="row" style="background-color:#95C8D8">
+        <div class="col-md-3">
+          <a href = Cloudiness.html>
+          <img  class="chart" src="Visualizations/GlobalCloudinessvslat.png">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a  href="Humidity.html">
+          <img class="chart" src="Visualizations/GlobalHumidityvslat.png">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="Temperature.html">
+          <img class="chart" src="Visualizations/GlobalMax Temperature (F)vslat.png">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="Wind_Speed.html">
+          <img class="chart" src="Visualizations/GlobalWind Speed (MPH)vslat.png">
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
+</body>
+</html>

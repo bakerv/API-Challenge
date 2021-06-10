@@ -1,0 +1,16 @@
+.chart {
+    width:90%;
+    max-width:1000px;
+    height:auto;
+}
+
+.img-left {
+    width: 300px;
+    float: left;
+    margin: 0 15px 0;
+}
+
+button{
+    background-color:red;
+    color:green
+}
